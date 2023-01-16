@@ -18,4 +18,4 @@ echo ''
 echo 'LINTING Python'
 echo ''
 
-find . -type f -name "*.py" -exec pylint {} \;
+pylint --recursive=y

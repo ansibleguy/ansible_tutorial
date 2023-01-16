@@ -1,4 +1,4 @@
-# Usage
+# Basic Ansible Usage
 
 In this video we will go through the basics n how to use Ansible and some Tips & Tricks.
 

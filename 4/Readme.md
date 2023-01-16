@@ -1,0 +1,5 @@
+# Ansible Inventory
+
+## Documentation
+
+## Inventory

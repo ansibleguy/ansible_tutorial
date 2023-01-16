@@ -49,13 +49,13 @@ python3 -m pip install ansible
 
 ```bash
 # roles
-ansible-galaxy install -r requirements.yml ansibleguy.infra_wireguard
+ansible-galaxy install ansibleguy.infra_wireguard
 
 ## from github
-ansible-galaxy install -r requirements.yml git+https://github.com/ansibleguy/sw_zabbix
+ansible-galaxy install git+https://github.com/ansibleguy/sw_zabbix
 
 ## install to a specific path
-ansible-galaxy install --roles-path ./roles -r ansibleguy.infra_wireguard
+ansible-galaxy install --roles-path ./roles ansibleguy.infra_wireguard
 
 # collections
 ansible-galaxy collection install ansibleguy.opnsense
@@ -64,7 +64,7 @@ ansible-galaxy collection install ansibleguy.opnsense
 ansible-galaxy collection install git+https://github.com/ansibleguy/collection_opnsense
 
 ## install to a specific path
-ansible-galaxy collection install -p ./collections  -r requirements.yml
+ansible-galaxy collection install ansibleguy.opnsense -p ./collections
 ```
 
 You can also save your requirements to a file:
@@ -141,7 +141,7 @@ You should create a script that runs those commands in the base-directory of you
 set -e
 ansible-lint -c .ansible-lint.yml
 yamllint .
-find . -type f -name "*.py" -exec pylint {} \;
+pylint --recursive=y
 ```
 
 An extended sample-script can be found [here](https://github.com/ansibleguy/videos/blob/main/2/structure/extended/script/).
