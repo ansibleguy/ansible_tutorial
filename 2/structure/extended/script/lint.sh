@@ -18,4 +18,4 @@ echo ''
 echo 'LINTING Python'
 echo ''
 
-pylint --recursive=y
+pylint --recursive=y .
