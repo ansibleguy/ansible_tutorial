@@ -2,13 +2,29 @@
 
 This is a brief overview on how to set-up an Ansible environment.
 
+## Controller vs AWX/Tower
+
+This tutorial shows you how to set-up a simple Ansible controller.
+
+We will not go into the possibility of installing an [Ansible AWX](https://www.ansible.com/community/awx-project) (_Open Source_) or [Ansible Tower](https://access.redhat.com/products/ansible-tower-red-hat) instance (_Closed Source_) that both enable you to use Ansible via a web-interface!
+
 ----
 
 ## Prerequisites
 
-Ansible needs to run on a linux system!
+Ansible needs to run on a linux/unix system! (_[Source](https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html)_)
+
+### Windows
 
 Microsoft WSL is [not supported](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#control-node-requirements). (_according to my experience it might work somehow, but it's not reliable_)
+
+If you are running on a Windows client-OS you will need to install a Linux virtual machine locally or in your existing virtualization environment.
+
+If you are using an IDE like [PyCharm](https://www.jetbrains.com/pycharm/) to manage your Ansible projects - you might want to map/redirect your local project directories into your VM. (_Ansible will execute them in read-only mode_)
+
+You might not need a GUI installation of linux. Commandline-only will do. Per example: [Debian minimal](https://www.debian.org/CD/netinst/) or [Ubuntu server](https://ubuntu.com/download/server)
+
+### Linux packages
 
 You need Python3 and PIP to run Ansible:
 
@@ -144,4 +160,4 @@ yamllint .
 pylint --recursive=y
 ```
 
-An extended sample-script can be found [here](https://github.com/ansibleguy/videos/blob/main/2/structure/extended/script/).
+An extended sample-script can be found [here](https://github.com/ansibleguy/videos/blob/main/2/structure/extended/script/lint.sh).

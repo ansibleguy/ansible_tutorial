@@ -2,6 +2,7 @@
 
 set -e
 
+# allows you to run the script from any directory as it changes into the directory one level up
 cd "$(dirname "$0")/.."
 
 echo ''
