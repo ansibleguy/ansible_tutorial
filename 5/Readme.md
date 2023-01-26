@@ -1,1 +1,5 @@
-# Dynamic Ansible Inventories
+# Ansible Inventory
+
+## Documentation
+
+## Inventory

@@ -1,5 +1,5 @@
-# Ansible Inventory
+# Ansible Scopes
 
 ## Documentation
 
-## Inventory
+## Scopes
