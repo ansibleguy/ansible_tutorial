@@ -10,11 +10,15 @@ I am creating videos on my [YouTube Channel](https://www.youtube.com/@ansibleguy
 
 1. Installing Ansible - [Info](https://github.com/ansibleguy/videos/blob/main/1) | [Video English](https://www.youtube.com/watch?v=88hUAGCbt9U) | [Video Deutsch](https://youtu.be/YaOEWItqRiU)
 2. What is Ansible - [Info](https://github.com/ansibleguy/videos/blob/main/2)
-3. Basic Ansible Usage - [Info](https://github.com/ansibleguy/videos/blob/main/3) 
-4. Scopes - [Info](https://github.com/ansibleguy/videos/blob/main/4)
-5. Inventory - [Info](https://github.com/ansibleguy/videos/blob/main/5)
-6. Dynamic Inventory - [Info](https://github.com/ansibleguy/videos/blob/main/6)
+3. Working environment - [Info](https://github.com/ansibleguy/videos/blob/main/3)
+4. Basic Ansible Usage - [Info](https://github.com/ansibleguy/videos/blob/main/4)
+5. Programming basics - [Info](https://github.com/ansibleguy/videos/blob/main/5)
+6. Jinja2 - [Info](https://github.com/ansibleguy/videos/blob/main/6) 
+7. Scopes - [Info](https://github.com/ansibleguy/videos/blob/main/7)
+
 
 ## Additional
 
 * Testing using Molecule - [Info](https://github.com/ansibleguy/videos/blob/main/99/Molecule.md)
+* Inventory - [Info](https://github.com/ansibleguy/videos/blob/main/99/inventory)
+* Dynamic Inventory - [Info](https://github.com/ansibleguy/videos/blob/main/99/dynamic_inventory)

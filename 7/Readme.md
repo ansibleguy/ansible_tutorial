@@ -1,0 +1,5 @@
+# Ansible Scopes
+
+## Documentation
+
+## Scopes
