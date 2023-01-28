@@ -68,13 +68,16 @@ There are some options to choose from:
   * [Google Cloud Engine](https://github.com/ansible-community/molecule-gce)
   * [AWS EC2](https://github.com/ansible-community/molecule-ec2)
 
-* Additional drives
+
+* Additional drivers
   * [Proxmox](https://github.com/meffie/molecule-proxmox)
 
 
 There are some usage differences between those platforms.
 
 I'll only go into the details of platforms I've experience with.
+
+----
 
 ### Docker
 

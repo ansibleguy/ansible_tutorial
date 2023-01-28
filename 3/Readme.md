@@ -6,6 +6,8 @@ This tutorial is pretty biased as it covers my personal experience.
 
 ## IDE - Integrated development environment
 
+Ansible documentation: [Popular editors](https://docs.ansible.com/ansible/latest/community/other_tools_and_programs.html#popular-editors)
+
 ### Atom
 
 * [GitHub](https://github.com/atom/atom)
