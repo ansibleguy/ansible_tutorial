@@ -1,6 +1,6 @@
 ---
 name: Invalid information
-about: Create a report to help us improve
+about: You have found invalid/wrong information in one of the tutorials
 title: "[TUT-NR] Invalid information"
 labels: wrong
 assignees: ''
