@@ -16,7 +16,7 @@ I am creating videos on my [YouTube Channel](https://www.youtube.com/@ansibleguy
 # Topics
 
 1. Installing Ansible - [Info](https://github.com/ansibleguy/videos/blob/main/1) | [Video English](https://www.youtube.com/watch?v=88hUAGCbt9U) | [Video Deutsch](https://youtu.be/YaOEWItqRiU)
-2. Intro to Ansible - [Info](https://github.com/ansibleguy/videos/blob/main/2)
+2. Intro to Ansible - [Info](https://github.com/ansibleguy/videos/blob/main/2) | [Video English](https://www.youtube.com/watch?v=NY02JV0hs-c)
 3. Working environment - [Info](https://github.com/ansibleguy/videos/blob/main/3)
 4. Basic Ansible Usage - [Info](https://github.com/ansibleguy/videos/blob/main/4)
 5. Programming basics - [Info](https://github.com/ansibleguy/videos/blob/main/5)
