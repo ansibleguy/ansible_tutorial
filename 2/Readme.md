@@ -193,8 +193,6 @@ Compare the Bash and Ansible example and think about it: which one would you rat
 
 #### Bash
 
-If a single command will fail, the whole script will stop executing.
-
 See: [Example Bash](https://github.com/ansibleguy/ansible_tutorial/blob/main/2/Example_Bash.md)
 
 #### Ansible

@@ -2,6 +2,8 @@
 
 *NOTE: I did not test this script completely*
 
+If a single command will fail, the whole script will stop executing. (_set -e_)
+
 ```bash
 #!/usr/bin/env bash
 
