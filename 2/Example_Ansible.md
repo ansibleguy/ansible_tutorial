@@ -160,12 +160,6 @@ app1_cnf:
         mode: 0640
       register: a2_cnf
 
-    - name: Reloading Apache2 if config changed
-      ansible.builtin.systemd:
-        name: 'apache2.service'
-        state: reloaded
-      when: a2_cnf.changed
-
     - name: Enabling Apache2 modules
       community.general.apache2_module:
         state: present
@@ -176,6 +170,13 @@ app1_cnf:
         - 'headers'
         - 'rewrite'
         - 'http2'
+      register: a2_mods
+
+    - name: Reloading Apache2 if config/mods changed
+      ansible.builtin.systemd:
+        name: 'apache2.service'
+        state: reloaded
+      when: a2_cnf.changed or a2_mods.changed
 
 - name: Update service
   hosts: web_app1
