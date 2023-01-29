@@ -2,6 +2,8 @@
 
 The Ansible collection 'community.mysql' and 'community.general' will need to be installed on the controller node!
 
+*NOTE: I did not test this playbook completely*
+
 ## Inventory
 
 ### Hosts
@@ -34,13 +36,25 @@ app1_cnf:
     name: 'app1'
     users:
       user1:
-        pwd: 'pwd1'
+        pwd: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          31363066336534336363653462386335623031303833333061646364326638653262356563363138
+          3463393330356162316437343533303463613235353834610a383766366133626332653332363437
+          34376431323634636564353430393365346165386332383061313033666466303436386362663933
+          6433613638626337300a646432353063313264313835353362336637353263663936303833376439
+          39303230316366333631316239313662633565376331326335323365316161313936613036653938
+          6664653433343232333832636338656263366562353837633637
         privs: 'ALL'
       user2:
-        pwd: 'pwd2'
+        pwd: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          66343461613165626562323935356166636462343761313538373537653933386663633137383433
+          6530383933633437366264363130306663626561313335350a363930633737633431333666653837
+          34653462663839623636313332343566363435636566633664653939373564363234646633656663
+          3935626339373935650a353134323734396261396338396663663933653232336563626338386163
+          37383930303362633264643339636162613932383133303933623261353935313262
         privs: 'SELECT'
 ```
-
 
 ## Playbook
 
@@ -183,4 +197,17 @@ app1_cnf:
         name: "{{ app1_cnf.update_svc }}.timer"
         enabled: true
         state: started
+```
+
+## Execution
+
+```bash
+ansible-playbook -D -K -k -i inventory/hosts.yml --ask-vault-pass playbook.yml --limit srv1
+# D = diff-mode
+# K = ask become password
+# k = ask connect password
+# i = inventory file
+# ask-vault-pass = ask for password that can be used to decrypt ansible-vault encrypted variables at runtime
+# playbook.yml = the actual playbook to execute
+# limit = only execute playbook targeting host 'srv1'
 ```

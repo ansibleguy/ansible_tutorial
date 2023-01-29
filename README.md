@@ -4,6 +4,13 @@
 
 # Info
 
+> **Warning:**
+>
+> If you find any **discrepancy, errors or missing information** in these tutorials - please feel free to open a [GitHub issue](https://github.com/ansibleguy/ansible_tutorial/issues)!
+>
+> These tutorials are subjective as they are based on my personal experience. 
+
+
 I am creating videos on my [YouTube Channel](https://www.youtube.com/@ansibleguy) that target the topics listed below! 
 
 # Topics

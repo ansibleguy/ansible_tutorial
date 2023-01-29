@@ -1,5 +1,9 @@
 # Intro to Ansible
 
+This introduction to Ansible is based on my personal experiences.
+
+I will not compare Ansible to other automation tools/frameworks! There may be some out there that can replace Ansible - but I haven't got much experience using other ones.
+
 ----
 
 ## Sources
@@ -20,13 +24,13 @@ There is also an Open-Source web-based control-environment named ['Ansible AWX']
 
 For enterprise-use RedHat offers a product named ['Ansible Automation Platform'](https://www.redhat.com/en/technologies/management/ansible) that is Closed-Source and must be licensed.
 
-### Arguments
+### Key points
 
 **Practical examples** of use-cases are:
 * Provisioning/managing IT-services from small- up to large-scale
   * [Webserver nodes](https://github.com/ansibleguy/infra_nginx)
   * [Database clusters](https://github.com/ansibleguy/infra_mariadb)
-  * Configuration of [host-](https://github.com/ansibleguy/infra_nftables) and [network-firewalls]((https://github.com/ansibleguy/collection_opnsense))
+  * Configuration of [host-](https://github.com/ansibleguy/infra_nftables) and [network-firewalls](https://github.com/ansibleguy/collection_opnsense)
   * Configuration of [local users](https://github.com/ansibleguy/linux_users) or identity providers
 * Generating and renewing [certificates](https://github.com/ansibleguy/infra_certs) for encrypted connectivity
 * Preparing for the worst-case - automate your disaster-recovery
@@ -95,7 +99,7 @@ Most of the time one will use the system-specific default connection-types:
 * Many systems via APIs (_mainly HTTPS/REST_)
 
 <a href="https://www.ansible.com/overview/how-ansible-works">
-  <img src="https://www.ansible.com/hs-fs/hubfs/graphic-crop.jpg?width=500&name=graphic-crop.jpg" alt="RedHat - Ansible" width="400"/>
+  <img src="https://www.ansible.com/hs-fs/hubfs/graphic-crop.jpg" alt="RedHat - Ansible" width="400"/>
 </a>
 
 ### Advanced tricks
@@ -148,6 +152,9 @@ That can catch user- or configuration-errors before they have any negative impac
   * Sensitive data can also be protected from being logged in clear-text using the ['no_log' parameter](https://docs.ansible.com/ansible/latest/reference_appendices/logging.html).
 Most Modules also implement this for secrets you pass to them.
   * Secrets that are [prompted at runtime](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_prompts.html#hashing-values-supplied-by-vars-prompt) can also be encrypted.
+* **Configuration**
+  * Working with complex configurations that require [multiple scopes](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html#scoping-variables) (_host, group, role, execution, ..._) can be challenging when using raw scripting.
+Ansible handles much of the mind-boggling logic in the background so we as admins/users don't have to deal with it.
 
 ----
 

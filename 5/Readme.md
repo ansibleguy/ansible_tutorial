@@ -25,6 +25,8 @@ Only the most basic data-types will be discussed here.
 * [Integer/Float](https://www.w3schools.com/python/python_numbers.asp)
 * [Dictionary](https://www.w3schools.com/python/python_dictionaries.asp)
 
+[Dynamically vs Statically typed languages](https://prepinsta.com/python/dynamic-typing-vs-static-typing-in-python)
+
 ## Interaction with data
 
 * [Iteration](https://www.w3schools.com/python/python_iterators.asp)
