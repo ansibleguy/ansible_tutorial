@@ -43,8 +43,14 @@ AnsibleGuy Roles use Docker as testing-platform.
 
 These steps have to be performed before running the tests:
 
-1. Add the 'molecule-docker.local' DNS-Record to your '/etc/hosts' file and point it to your docker-server to use.
-2. You will have to add the 'DOCKER_HOST' environmental variable:
+1. You need to install molecule version '4.0.1' ```python3 -m pip install molecule==4.0.1```!
+
+    **Why?**
+
+    I use [YAML-anchors](https://support.atlassian.com/bitbucket-cloud/docs/yaml-anchors/) to keep my molecule configuration to a minimum - the current version of molecule does not allow those to be defined. See: [molecule issue 3689](https://github.com/ansible-community/molecule/issues/3689)
+
+3. Add the 'molecule-docker.local' DNS-Record to your '/etc/hosts' file and point it to your docker-server to use.
+4. You will have to add the 'DOCKER_HOST' environmental variable:
 ```bash
 export DOCKER_HOST="tcp://molecule-docker.local:2375"
 ```
