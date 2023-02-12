@@ -32,6 +32,12 @@ You need Python3 and PIP to run Ansible:
 sudo apt install python3 python3-pip
 ```
 
+The 'sshpass' package is needed for the SSH connection-type:
+
+```bash
+sudo apt install sshpass
+```
+
 ----
 
 ## Virtual Environment
