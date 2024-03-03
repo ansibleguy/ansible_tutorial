@@ -57,6 +57,16 @@ export DOCKER_HOST="tcp://molecule-docker.local:2375"
 
 ----
 
+## Troubleshooting
+
+Run in debug mode and enable command-logging:
+
+```bash
+MOLECULE_NO_LOG=false molecule --debug create
+```
+
+----
+
 ## Platform
 
 Molecule dynamically creates VMs or Containers that are used as target for you Ansible playbook to test.
